@@ -73,7 +73,7 @@ class Cinema {
       return { row: String.fromCharCode(65 + r), seat: s + 1 };
     });
 
-    const bookingId = `GIC${String(++this.bookingCount).padStart(4, '0')}`;
+    const bookingId = `XYZ${String(++this.bookingCount).padStart(4, '0')}`;
     const booking = { bookingId, seats };
     this.bookings.push(booking);
     return booking;

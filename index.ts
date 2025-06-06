@@ -19,7 +19,7 @@ try {
 function showMenu(): void {
   if (!cinema) return;
 
-  console.log(`\nWelcome to GIC Cinemas`);
+  console.log(`\nWelcome to XYZ Cinemas`);
   console.log(`[1] Book tickets for ${cinema.title} (${cinema.getAvailableSeatsCount()} seats available)`);
   console.log("[2] Check bookings");
   console.log("[3] Exit");
@@ -116,7 +116,7 @@ function handleMenuSelection(choice: string): void {
     }
 
     case "3": {
-      console.log("Thank you for using GIC Cinemas system. Bye!");
+      console.log("Thank you for using XYZ Cinemas system. Bye!");
       process.exit(0);
     }
 

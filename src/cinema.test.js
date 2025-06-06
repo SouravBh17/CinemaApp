@@ -1,13 +1,13 @@
 const Cinema = require('./cinema');
 
-describe('GIC Cinema Booking System', () => {
+describe('XYZ Cinema Booking System', () => {
   let cinema;
 
   beforeEach(() => {
     cinema = new Cinema('Test Movie', 5, 10);
   });
 
-  test('GIC has correct available seats', () => {
+  test('XYZ has correct available seats', () => {
     expect(cinema.getAvailableSeatsCount()).toBe(50);
   });
 
@@ -40,7 +40,7 @@ describe('GIC Cinema Booking System', () => {
     const selected = new Set(['0-0', '0-1']);
     const result = cinema.confirmSelection(selected);
 
-    expect(result.bookingId).toBe('GIC0001');
+    expect(result.bookingId).toBe('XYZ0001');
     expect(result.seats).toEqual([
       { row: 'A', seat: 1 },
       { row: 'A', seat: 2 }
